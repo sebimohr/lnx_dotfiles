@@ -1,0 +1,9 @@
+# Gitignore for my dotfiles
+
+# Alacritty
+alacritty/themes/*
+!alacritty/themes/mos-tokyo-night.toml
+
+# Zsh
+zsh/.zcompdump
+

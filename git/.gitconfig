@@ -1,0 +1,32 @@
+[core]
+        editor = "nvim"
+        autocrlf = input
+[alias]
+        h = log --graph --branches --remotes --tags --format='%C(auto)%h %d %s  -  %an'
+        history = log --graph --branches --remotes --tags --format='%C(auto)%h %d %s  -  %an'
+        hd = log --graph --branches --remotes --tags --format='%C(auto)%h %d %s%n%an %ai%n'
+        history-detailed = log --graph --branches --remotes --tags --format='%C(auto)%h %d %s%n%an %ai%n'
+        co = checkout
+        ci = commit
+        cm = commit -m
+        cam = commit -am
+        camend = commit --amend --no-edit
+        fpush = push --force-with-lease
+        st = status
+        br = branch
+        fa = fetch --all
+        rc = -c core.editor=true rebase --continue
+        cp = cherry-pick
+        cpc = -c core.editor=true cherry-pick --continue
+[user]
+        name = Sebastian Mohr
+        email = sebastianmohr96@gmail.com
+[init]
+        defaultBranch = main
+[push]
+        autoSetupRemote = true
+[pull]
+        rebase = true
+
+[rerere]
+        enabled = true

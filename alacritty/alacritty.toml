@@ -1,0 +1,17 @@
+# This is my alacritty configuration file
+# From Sebastian Mohr
+
+import = [
+    "~/.dotfiles/alacritty/themes/mos-tokyo-night.toml"
+]
+
+[window]
+opacity = 0.9
+blur = true
+padding = { x = 4, y = 4 }
+dynamic_padding = true
+
+[font]
+normal = { family = "JetBrainsMonoNLNerdFontMono", style = "Regular" }
+size = 14
+
