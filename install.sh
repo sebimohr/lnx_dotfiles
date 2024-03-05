@@ -3,12 +3,34 @@
 
 echo "Creating symlinks for dotfiles..."
 
-script_directory=$(dirname "$0")
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+CONFIG_DIR=".config"
 
-#ln -s $script_directory/themes $HOME/.themes
-#ln -s $script_directory/nvim $HOME/.config/nvim
-#ln -s $script_directory/alacritty $HOME/.config/alacritty/
-ln -s $script_directory/zsh/.zshrc $HOME/.zshrc
-ln -s $script_directory/zsh/.p10k.zsh $HOME/.p10k.zsh
-ln -s $script_directory/git/.gitconfig $HOME/.gitconfig
+# The symlinks define the original location where the config file is expected
+# The targets define the location of the config files in the current directory
+symlinks=(".themes" "$CONFIG_DIR/nvim" "$CONFIG_DIR/alacritty" ".zshrc"     ".p10k.zsh"     ".gitconfig")
+targets=( "themes"  "nvim"             "alacritty"             "zsh/.zshrc" "zsh/.p10k.zsh" "git/.gitconfig")
+
+# Function for creating the symlink
+create_symlink() {
+    local symlink=$1
+    local target=$2
+
+    # Check if symlink exists
+    if [ -L "$symlink" ]; then
+        echo "Symlink already exists $symlink -> $(readlink $symlink)"
+    else
+        # Symlink doesn't exist, create it
+        echo "Creating symlink: $symlink -> $target"
+        ln -s "$target" "$symlink"
+        echo "Symlink created: $symlink -> $target"
+    fi
+}
+
+# loop through array, create / check all symlinks
+for (( i=0; i<${#symlinks[@]}; i++ )); do
+    symlink=${symlinks[$i]}
+    target=${targets[$i]}
+    create_symlink "$HOME/$symlink" "$SCRIPTPATH/$target"
+done
 
