@@ -3,11 +3,12 @@
 
 echo "Creating symlinks for dotfiles..."
 
-DOTFILES_DIR="~/.dotfiles"
+script_directory=$(dirname "$0")
 
-ln -s $DOTFILES_DIR/themes/* ~/.themes
-ln -s $DOTFILES_DIR/nvim/* ~/.config/nvim/
-ln -s $DOTFILES_DIR/alacritty/* ~/.config/alacritty/
-ln -s $DOTFILES_DIR/zsh/.zshrc ~/.zshrc
-ln -s $DOTFILES_DIR/zsh/.p10k.zsh ~/.p10k.zsh
+#ln -s $script_directory/themes $HOME/.themes
+#ln -s $script_directory/nvim $HOME/.config/nvim
+#ln -s $script_directory/alacritty $HOME/.config/alacritty/
+ln -s $script_directory/zsh/.zshrc $HOME/.zshrc
+ln -s $script_directory/zsh/.p10k.zsh $HOME/.p10k.zsh
+ln -s $script_directory/git/.gitconfig $HOME/.gitconfig
 
