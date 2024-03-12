@@ -11,6 +11,12 @@ blur = true
 padding = { x = 4, y = 4 }
 dynamic_padding = true
 
+[keyboard]
+# spawn new alacritty instance by pressing Ctrl+Shift+Return
+bindings = [
+   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]
+
 [font]
 normal = { family = "JetBrainsMonoNLNerdFontMono", style = "Regular" }
 size = 14
