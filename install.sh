@@ -8,8 +8,30 @@ CONFIG_DIR=".config"
 
 # The symlinks define the original location where the config file is expected
 # The targets define the location of the config files in the current directory
-symlinks=(".themes" "$CONFIG_DIR/nvim" "$CONFIG_DIR/alacritty" ".zshrc"     ".p10k.zsh"     ".gitconfig")
-targets=( "themes"  "nvim"             "alacritty"             "zsh/.zshrc" "zsh/.p10k.zsh" "git/.gitconfig")
+symlinks=(
+    "$CONFIG_DIR/alacritty"
+    ".gitconfig"
+    "$CONFIG_DIR/hypr"
+    "$CONFIG_DIR/mako"
+    "$CONFIG_DIR/nvim"
+    "$CONFIG_DIR/nwg-bar"
+    ".themes"
+    "$CONFIG_DIR/waybar"
+    ".zshrc"
+    ".p10k.zsh"
+)
+targets=(
+    "alacritty"
+    "git/.gitconfig"
+    "hypr"
+    "mako"
+    "nvim"
+    "nwg-bar"
+    "themes"
+    "waybar"
+    "zsh/.zshrc"
+    "zsh/.p10k.zsh"
+)
 
 # Function for creating the symlink
 create_symlink() {
