@@ -10,6 +10,7 @@ CONFIG_DIR=".config"
 # The targets define the location of the config files in the current directory
 symlinks=(
     "$CONFIG_DIR/alacritty"
+    "$CONFIG_DIR/bat"
     ".gitconfig"
     "$CONFIG_DIR/hypr"
     "$CONFIG_DIR/mako"
@@ -22,6 +23,7 @@ symlinks=(
 )
 targets=(
     "alacritty"
+    "bat"
     "git/.gitconfig"
     "hypr"
     "mako"

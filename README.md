@@ -30,6 +30,7 @@ The install script creates symlinks from the default locations into the `.dotfil
 You have to install following packages, that are available in the _extra_ or the _aur_ repositories:
 
 - __Alacritty__: terminal emulator
+- __bat__: cat clone
 - __Git__: version control system
 - __Hyprland__: desktop environment / window manager
   - __Mako__: notification deamon
