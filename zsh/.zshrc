@@ -31,6 +31,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # aliases
 alias vim='nvim'
 alias vimdiff='nvim -d'
+alias sudovim='sudo -E -s nvim'
 
 # keybindings
 bindkey "^[[1;5C" forward-word
