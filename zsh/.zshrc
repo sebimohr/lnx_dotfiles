@@ -47,3 +47,5 @@ export VISUAL='$EDITOR'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Add GPG-key to terminal config
+export GPG_TTY=$(tty)

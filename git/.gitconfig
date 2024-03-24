@@ -21,6 +21,7 @@
 [user]
         name = Sebastian Mohr
         email = sebastianmohr96@gmail.com
+	signingkey = DCE8BD6E86563D4C
 [init]
         defaultBranch = main
 [push]
@@ -30,3 +31,5 @@
 
 [rerere]
         enabled = true
+[commit]
+	gpgsign = true
