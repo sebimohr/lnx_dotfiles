@@ -1,5 +1,5 @@
 -- [[ Setting options ]]
--- See `:help vim.opt`
+-- See `:help option`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
@@ -19,7 +19,14 @@ vim.opt.showmode = false
 vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
+vim.opt.autoindent = true
+
+-- Configure indentation
 vim.opt.breakindent = true
+vim.opt.copyindent = true
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.tabstop = 4
 
 -- Save undo history
 vim.opt.undofile = true
