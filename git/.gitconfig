@@ -12,6 +12,7 @@
         cm = commit -m
         cam = commit -am
         camend = commit --amend --no-edit
+        sdiff = diff --staged
         fpush = push --force-with-lease
         st = status
         br = branch
