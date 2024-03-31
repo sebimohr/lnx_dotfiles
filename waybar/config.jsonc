@@ -8,6 +8,7 @@
 "exclusive": true,
 "passthrough": false,
 "position": "top",
+"height": 38,
 "spacing": 4,
 "fixed-center": true,
 "margin-top": 1,
