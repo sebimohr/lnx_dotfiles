@@ -1,0 +1,6 @@
+# mako configuration file
+
+# style
+background-color=#285577A0
+border-radius=4
+default-timeout=3000
