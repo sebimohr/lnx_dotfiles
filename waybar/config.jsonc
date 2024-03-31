@@ -8,9 +8,9 @@
     "reload_style_on_change": true,
     // Choose the order of the modules
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/window"
+        "hyprland/workspaces",
+        "hyprland/mode",
+        "hyprland/window"
     ],
     "modules-center": [
         "clock"
@@ -19,10 +19,17 @@
         "pulseaudio",
         "network",
         "backlight",
+        "backlight/slider",
         "battery"
     ],
     // Modules configuration
-    "sway/mode": {
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate"
+    },
+    "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
     "clock": {
@@ -35,15 +42,19 @@
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
+    "backlight/slider": {
+        "min": 10,
+        "max": 100
+    },
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 80,
             "warning": 30,
             "critical": 15
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
