@@ -277,7 +277,7 @@
           "(.*) — Mozilla Firefox": " $1",
           "(.*) - fish": "> [$1]",
       "(.*) - zsh": "> [$1]",
-      "(.*) - kitty": "> [$1]",
+      "(.*) - alacritty": "> [$1]",
     },
 },
   
@@ -309,7 +309,7 @@
     "format-alt-click": "click",
     "tooltip": true,
     "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
-    "on-click-right": "kitty --title btop sh -c 'btop'"
+    // "on-click-right": "kitty --title btop sh -c 'btop'"
 },
 
 "mpris": {
@@ -341,21 +341,7 @@
 	// "ignored-players": ["firefox"]
 	"max-length": 30,
 },
-      
-"network": {
-    "format": "{ifname}",
-    "format-wifi": "{icon}",
-    "format-ethernet": "󰌘",
-    "format-disconnected": "󰌙", 
-    "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
-    "format-linked": "󰈁 {ifname} (No IP)",
-    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
-    "tooltip-format-ethernet": "{ifname} 󰌘",
-    "tooltip-format-disconnected": "󰌙 Disconnected",
-    "max-length": 50,
-    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
-},
-  
+
 "network#speed": {
     "interval": 1,
     "format": "{ifname}",
@@ -364,7 +350,7 @@
     "format-disconnected": "󰌙", 
     "tooltip-format": "{ipaddr}",
     "format-linked": "󰈁 {ifname} (No IP)",
-    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-wifi": "{essid} {icon}  {signalStrength}%",
     "tooltip-format-ethernet": "{ifname} 󰌘",
     "tooltip-format-disconnected": "󰌙 Disconnected",
     "max-length": 50,
@@ -521,9 +507,8 @@
 
 "custom/power": {
     "format": "⏻ ",
-    "exec": "echo ; echo 󰟡 power // blur",
-	"on-click": "~/.config/hypr/scripts/Wlogout.sh",
-    "on-click-right": "~/.config/hypr/scripts/ChangeBlur.sh",
+    "exec": "echo ; echo power",
+    "on-click": "exec nwg-bar",
     "interval" : 86400, // once every day
     "tooltip": true,
 },
