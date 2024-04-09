@@ -1,0 +1,3 @@
+# wofi config file
+show=drun
+matching=fuzzy
