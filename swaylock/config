@@ -2,3 +2,4 @@ daemonize
 show-failed-attempts
 ignore-empty-password
 color=000000
+fade-in=10
