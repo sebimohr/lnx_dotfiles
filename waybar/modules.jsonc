@@ -508,7 +508,7 @@
 "custom/power": {
     "format": "⏻ ",
     "exec": "echo ; echo power",
-    "on-click": "exec nwg-bar",
+    "on-click": "exec wlogout",
     "interval" : 86400, // once every day
     "tooltip": true,
 },
