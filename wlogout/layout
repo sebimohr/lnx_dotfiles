@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "loginctl lock-session",
+    "action" : "exec swaylock",
     "text" : "Lock",
     "keybind" : "l"
 }
