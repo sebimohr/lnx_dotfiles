@@ -38,7 +38,7 @@ bindkey "^[[1;5C" forward-word # CTRL + RIGHT
 bindkey "^[[1;5D" backward-word # CTRL + LEFT
 bindkey "^H" backward-kill-word # CTRL + BACKSPACE
 bindkey "[3;5~" kill-word # CTRL + DELETE
-# bindkey "\e" kill-whole-line # IDK
+bindkey "\e" kill-whole-line # ESC
 
 # exports
 export EDITOR='nvim'
