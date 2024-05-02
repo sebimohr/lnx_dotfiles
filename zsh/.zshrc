@@ -29,23 +29,13 @@ USE_POWERLINE="true"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # aliases
-alias vim='nvim'
-alias vimdiff='nvim -d'
-alias sudovim='sudo -E -s nvim'
+source ~/.config/zsh/.zshAlias
 
 # keybindings
-bindkey "^[[1;5C" forward-word # CTRL + RIGHT
-bindkey "^[[1;5D" backward-word # CTRL + LEFT
-bindkey "^H" backward-kill-word # CTRL + BACKSPACE
-bindkey "[3;5~" kill-word # CTRL + DELETE
-bindkey "\e" kill-whole-line # ESC
+source ~/.config/zsh/.zshBindings
 
 # exports
-export EDITOR='nvim'
-export VISUAL='$EDITOR'
+source ~/.config/zsh/.zshExports
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Add GPG-key to terminal config
-export GPG_TTY=$(tty)
