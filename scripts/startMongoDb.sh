@@ -1,3 +1,4 @@
+#!/bin/bash
 #~/startMongoDb.sh
 
 sudo chown -R mongodb:mongodb /var/lib/mongodb

@@ -1,3 +1,4 @@
+#!/bin/bash
 # ~/.dotfiles/install.sh
 # This script should help you setup my dotfiles.
 

@@ -1,3 +1,4 @@
+#!/bin/bash
 #~/startOTHVpn.sh
 
 echo "Starting OTH VPN"
