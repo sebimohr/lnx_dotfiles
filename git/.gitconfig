@@ -34,3 +34,5 @@
         enabled = true
 [commit]
 	gpgsign = true
+[submodule]
+	recurse = true
