@@ -2,7 +2,8 @@
 export EDITOR='nvim'
 export VISUAL='$EDITOR'
 
-export HYPRSHOT_DIR=/home/smohr/Pictures/Screenshots/ # Hyprshot default directory
+# Hyprshot default directory
+export HYPRSHOT_DIR=/home/smohr/Pictures/Screenshots
 
 # Add GPG-key to terminal config
 export GPG_TTY=$(tty)
