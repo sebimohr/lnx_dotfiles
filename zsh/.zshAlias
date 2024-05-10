@@ -1,5 +1,10 @@
 # aliases
+
+# NVIM
 alias vim='nvim'
 alias vimdiff='nvim -d'
 alias sudovim='sudo -E -s nvim'
+
+# LSD
+alias ls='lsd'
 

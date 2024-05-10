@@ -26,7 +26,7 @@
 
     "modules-center": [
         "clock",
-        "custom/seperator#blank",
+        "custom/separator#line", 
         "hyprland/window"
     ], 
 
