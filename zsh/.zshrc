@@ -26,7 +26,7 @@ fi
 USE_POWERLINE="true"
 
 # plugins
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # aliases
 source ~/.config/zsh/.zshAlias

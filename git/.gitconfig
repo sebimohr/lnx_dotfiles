@@ -21,7 +21,7 @@
 [user]
         name = Sebastian Mohr
         email = sebastianmohr96@gmail.com
-	signingkey = DCE8BD6E86563D4C # public GPG key
+        signingkey = A44D1B3D3C171414 # public GPG key
 [init]
         defaultBranch = main
 [push]
@@ -31,6 +31,6 @@
 [rerere]
         enabled = true
 [commit]
-	gpgsign = true # sign commits by default if there is a GPG key
+        gpgsign = true # sign commits by default if there is a GPG key
 [submodule]
-	recurse = true
+        recurse = true

@@ -17,6 +17,7 @@ symlinks=(
     "$CONFIG_DIR/hypr"
     "$CONFIG_DIR/mako"
     "$CONFIG_DIR/nvim"
+    "$CONFIG_DIR/paru"
     "$CONFIG_DIR/swaylock"
     ".themes"
     "$CONFIG_DIR/waybar"
@@ -24,6 +25,7 @@ symlinks=(
     "$CONFIG_DIR/wofi"
     ".zshrc"
     ".p10k.zsh"
+    "$CONFIG_DIR/zsh"
     "/usr/local/bin/startothvpn"
 )
 targets=(
@@ -34,6 +36,7 @@ targets=(
     "hypr"
     "mako"
     "nvim"
+    "paru"
     "swaylock"
     "themes"
     "waybar"
@@ -41,6 +44,7 @@ targets=(
     "wofi"
     "zsh/.zshrc"
     "zsh/.p10k.zsh"
+    "zsh"
     "scripts/startOTHVpn.sh"
 )
 
@@ -66,4 +70,6 @@ for (( i=0; i<${#symlinks[@]}; i++ )); do
     target=${targets[$i]}
     create_symlink "$HOME/$symlink" "$SCRIPTPATH/$target"
 done
+
+echo "Done!"
 
