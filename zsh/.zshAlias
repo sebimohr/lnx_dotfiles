@@ -7,4 +7,5 @@ alias sudovim='sudo -E -s nvim'
 
 # LSD
 alias ls='lsd'
+alias tree='ls -A --tree --depth'
 
