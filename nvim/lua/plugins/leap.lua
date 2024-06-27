@@ -4,12 +4,12 @@
 -- See the kickstart.nvim README for more information
 return {
   {
+    -- Required plugin for leap.nvim
     'tpope/vim-repeat',
     name = 'vim-repeat',
   },
   {
     'ggandor/leap.nvim',
-    lazy = false,
     keys = {
       { 't', '<Plug>(leap-forward)', mode = { 'n', 'x', 'o' }, desc = 'Leap Forward to' },
       { 'T', '<Plug>(leap-backward)', mode = { 'n', 'x', 'o' }, desc = 'Leap Backward to' },
