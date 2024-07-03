@@ -18,10 +18,6 @@
         cp = cherry-pick
         cpc = -c core.editor=true cherry-pick --continue
         rmi = !git rm -r --cached * && git add . # removes cached files and readds them to filter out ignored, tracked files
-[user]
-        name = Sebastian Mohr
-        email = sebastianmohr96@gmail.com
-        signingkey = A44D1B3D3C171414 # public GPG key
 [init]
         defaultBranch = main
 [push]
@@ -34,3 +30,5 @@
         gpgsign = true # sign commits by default if there is a GPG key
 [submodule]
         recurse = true
+[include]
+        path = .gitconfig_user

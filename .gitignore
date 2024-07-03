@@ -7,3 +7,6 @@ alacritty/themes/*
 # Zsh
 zsh/.zcompdump
 
+# user specific git config
+git/.gitconfig_user
+
