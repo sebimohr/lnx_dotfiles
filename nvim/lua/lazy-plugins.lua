@@ -51,6 +51,7 @@ require('lazy').setup({
   -- MY OWN PLUGINS
 
   require 'plugins/catppuccin',
+
   require 'plugins/leap',
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
