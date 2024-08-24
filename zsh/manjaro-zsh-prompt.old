@@ -1,7 +1,7 @@
 () {
   emulate -L zsh
 
-  source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+  # source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
   source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
   # Determine terminal capabilities.
@@ -25,7 +25,7 @@
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
   else
     # Use 256 colors and UNICODE.
-    source /usr/share/zsh/p10k.zsh
+    source ~/.config/zsh/.p10k.zsh
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
   fi
 }

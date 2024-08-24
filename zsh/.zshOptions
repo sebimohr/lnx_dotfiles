@@ -1,0 +1,12 @@
+# history settings
+HISTFILE=~/.cache/zsh_history
+HISTSIZE=50000
+SAVEHIST=10000
+setopt appendhistory
+setopt sharehistory
+setopt histfcntllock
+setopt histignorealldups
+
+# Use powerline
+USE_POWERLINE="true"
+

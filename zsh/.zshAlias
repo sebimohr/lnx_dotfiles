@@ -6,6 +6,11 @@ alias vimdiff='nvim -d'
 alias sudovim='sudo -E -s nvim'
 
 # LSD
-alias ls='lsd'
-alias tree='ls -A --tree --depth'
+alias ls='eza --icons=auto'
+alias tree='ls -aTL'
+
+# General better tools
+alias cat='bat'
+alias grep='rg'
+alias neofetch='fastfetch'
 

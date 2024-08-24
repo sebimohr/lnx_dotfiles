@@ -7,3 +7,11 @@ export HYPRSHOT_DIR=/home/smohr/Pictures/Screenshots
 
 # Add GPG-key to terminal config
 export GPG_TTY=$(tty)
+
+# Add bat as manpager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
+# Add eza / ls completions
+export PATH="/home/smohr/.config/eza/zsh:$PATH"
+
