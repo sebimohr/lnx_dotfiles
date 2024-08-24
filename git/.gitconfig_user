@@ -1,4 +1,10 @@
 [user]
-        name = <NAME>
-        email = <EMAIL>
-        signingkey = <GPG_KEY>
+        name = Sebastian Mohr
+        email = sebastian.mohr@vector.com
+        signingkey = ~/.ssh/id_ed25519.pub # public GPG key
+[gpg]
+        format = ssh
+[http]
+        proxy = http://gateway.zscloud.net:9480
+[https]
+        proxy = http://gateway.zscloud.net:9480

@@ -1,7 +1,7 @@
 [core]
-        editor = "nvim"
+        editor = nvim
         autocrlf = input
-        pager = "bat" # use bat instead of cat for git diff and stuff like that
+        pager = delta # use bat instead of cat for git diff and stuff like that
 [alias]
         h = log --graph --branches --remotes --tags --format='%C(auto)%h %d %s  -  %an'
         hd = log --graph --branches --remotes --tags --format='%C(auto)%h %d %s%n%an %ai%n'
@@ -18,6 +18,7 @@
         cp = cherry-pick
         cpc = -c core.editor=true cherry-pick --continue
         rmi = !git rm -r --cached * && git add . # removes cached files and readds them to filter out ignored, tracked files
+        sup = submodule update --init --recursive
 [init]
         defaultBranch = main
 [push]
@@ -32,3 +33,8 @@
         recurse = true
 [include]
         path = .gitconfig_user
+        path = ~/.config/delta/catppuccin.gitconfig
+[delta]
+        line-numbers = true
+        features = catppuccin-mocha
+
