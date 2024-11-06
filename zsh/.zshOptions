@@ -10,3 +10,8 @@ setopt histignorealldups
 # Use powerline
 USE_POWERLINE="true"
 
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval $(ssh-agent -s) > /dev/null
+    ssh-add ~/.ssh/id_ed25519 > /dev/null 2>&1
+fi
+
