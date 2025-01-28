@@ -15,6 +15,3 @@ export MANROFFOPT="-c"
 # Add eza / ls completions
 export PATH="/home/smohr/.config/eza/zsh:$PATH"
 
-# Add vector specific exports
-source ~/.config/zsh/.zshExportsVector
-

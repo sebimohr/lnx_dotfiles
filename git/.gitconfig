@@ -14,6 +14,7 @@
         sdiff = diff --staged
         srestore = restore --staged
         fpush = push --force-with-lease
+        p = push
         st = status
         br = branch
         fa = fetch --all
@@ -55,5 +56,7 @@
         navigate = true
         features = catppuccin-mocha
 [http]
+        sslBackend = openssl
+[https]
         sslBackend = openssl
 
