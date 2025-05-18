@@ -15,3 +15,6 @@ export MANROFFOPT="-c"
 # Add eza / ls completions
 export PATH="/home/smohr/.config/eza/zsh:$PATH"
 
+# Export system ssl certificates so pyhton uses them instead of its own
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
